@@ -1,6 +1,7 @@
 #include <iostream>
 
 void chr(int i){
+	char c;
 	std::cout << (char)i <<" ";
 }
 int ord(char c){
@@ -10,12 +11,13 @@ int ord(char c){
 
 int main (){
 
-	for (int i=ord('A'); i<=ord('Z'); i++){
+	for (int i=ord('Z'); i>=ord('A'); i--){
 		chr(i);
 	}
 	std::cout<<"\n";
+
 	
-	for (int i=('a'); i<= ('z'); i++){
+	for (int i=ord('z'); i>= ord('a'); i--){
 		chr(i);
 
 	}
